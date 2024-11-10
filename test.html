@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Logo</div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+          <li></li>
+          <li>Insta</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="body">
+      <div class="left">
+        <p class="subtitle">Hi I'm Saul</p>
+        <p class="title">I’M A WEB DESIGNER</p>
+        <p class="details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis.
+        </p>
+        <button>View My Projects</button>
+      </div>
+      <div class="right">
+          <img src="model.png" alt="" /></div>
+        <div class="right-shadow-1"></div>
+        <div class="right-shadow-2"></div>
+    </div>
+  </body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Mr+Dafoe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+      background-color: #1f1f1f;
+      color: white;
+      margin: auto;
+      padding: 0 2em;
+      height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 5px;
+    }
+    li{
+        font-size: .5em;
+        font-family: "Poppins";
+    }
+
+    .subtitle{
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .title{
+        font-size: 2em;
+        font-weight: bold;
+
+    }
+    .details{
+        font-size: .5em;
+        color: #f8f7f980;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: row;
+    }
+    p{
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+    }
+    .left {
+      flex: 50%;
+      margin-top: 10vh;
+    }
+    .right {
+      flex: 50%;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: #f8f7f9;
+    }
+    
+    .right-shadow-1{
+        width: 80vw;
+        height: 100vh;
+        background: #1f1f1f;
+        position: absolute;
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.09) 0%,
+        rgba(31, 31, 31, 0.13911502100840334) 50%
+      );
+    }
+    .right-shadow-2{
+        top: 0;
+        left: 1vw;
+        width: 80vw;
+        height: 100vh;
+        background: #fe0000;
+        position: absolute;
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.09) 0%,
+        rgba(31, 31, 31, 0.13911502100840334) 50%
+      );
+    }
+    img {
+        width: 100%;          /* Ensures the image takes full width of the container */
+  height: auto;         /* Maintains the aspect ratio */
+  object-fit: cover;
+    }
+  </style>
+</html>
